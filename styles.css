@@ -1,0 +1,207 @@
+* {
+ margin:"0";
+ padding:"0";
+}
+
+body {
+    margin: 30px 30px 10px 30px;
+    background-color: whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#wrapper {
+    background-color: antiquewhite;
+    padding: 30px;
+}
+
+/*HEADER SECTION*/
+/*logo and name of restuarant*/
+#heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*name of restuarant*/
+#heading h1 {
+    padding: 30px 20px;
+    color: rgb(24, 24, 39);
+}
+
+/*horizontal naviagtion bar*/
+nav {
+    border: 1px solid black;
+    background-color: rgb(173, 238, 68);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style-type: none;
+    display:inline;
+    padding: 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(18, 18, 54);
+    font-weight: 800;
+}
+
+
+li a:hover {
+    background-color: yellow;
+    padding:10px;
+    font-weight: bold;
+}
+
+/*MAIN SECTION*/
+/*Promo section (30% off)*/
+.promo{
+    height: 150px;
+    background-image: url("new\ menu.jpg");
+    background-size: cover;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/*promo title*/
+.promo h2 {
+    margin-bottom: 30px;
+}
+
+
+/*Article section (new menu, booking, and opening hours)*/
+#highlights {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin: 20px 0px;
+}
+
+/*Each column*/
+.col-3 {
+    background-color: rgb(173, 238, 68);
+    border: none;
+}
+
+/*Each of the highlight part*/
+#new-menu {
+    padding:10px;
+    border-radius: 20px;
+}
+
+#table-booking {
+    padding:10px;
+    border-radius: 20px;
+}
+
+#opening-hours {
+    padding:10px;
+    border-radius: 20px;
+}
+
+/*each image*/
+.col-img {
+    width: 300px;
+    height: 150px;
+}
+
+.highlight-link a{
+    color: rgb(18, 18, 54);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.highlight-link a:hover {
+    background-color: yellow;
+    padding:10px;
+    font-weight: bold;
+}
+
+.working-hours{
+    line-height: 20px;
+    /*background-color: antiquewhite;*/
+    padding:10px;
+    text-align: center;
+}
+
+/*Footer Section*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+footer p {
+    margin-left: 400px;
+}
+
+span{
+    font-size: x-small;
+}
+
+
+/*RESPOSNSIVENESS FOR MOBILE DEVICES (480PX MAX WIDTH)*/
+@media screen and (max-width: 480px) {
+    #heading {
+        margin-bottom: 15px;
+    }
+    
+    #heading h1 {
+        padding: 20px 10px;
+        font-size:large;
+    }
+    
+    #main-logo {
+        width: 50px;
+        height: 70px;
+    }
+
+    nav {
+        width:max-content;
+    }
+
+    li {
+        padding: 15px;
+    }
+    
+    li a {
+        font-weight: 400;
+    }
+
+    li a:hover {
+        font-weight:400;
+    }
+
+    .promo{
+        height: 250px;
+        font-size: small;
+    }
+
+    #highlights {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        margin-left: 50px;
+        display: flex;
+        font-size: x-small;
+    }
+
+    #footer-img{
+        height:50px;
+    }
+
+    body {
+    margin: 30px 30px 5px 30px;
+}
+
+   #wrapper {
+    padding: 20px 30px;
+}
+}
+
